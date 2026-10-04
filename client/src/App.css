@@ -1,0 +1,168 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f4f6f8;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 750px;
+  background-color: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+}
+
+.todo-form input:focus {
+  border-color: #2563eb;
+}
+
+.todo-form button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.todo-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-content input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.task-content input[type="text"] {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.edit-button,
+.save-button,
+.delete-button {
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #2563eb;
+}
+
+.save-button {
+  background-color: #16a34a;
+}
+
+.delete-button {
+  background-color: #dc2626;
+}
+
+.edit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.save-button:hover {
+  background-color: #15803d;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .todo-container {
+    padding: 25px 18px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .todo-form button {
+    width: 100%;
+  }
+
+  .todo-item {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .task-buttons {
+    margin-left: 27px;
+  }
+}
